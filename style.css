@@ -1,0 +1,657 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a, img,
+strong, b, u, i, center, ol, ul, li,
+table, tbody, tfoot, thead, tr, th, td,
+footer, header, menu, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Libre Caslon Text', serif;
+    background-color: #ffffff;
+}
+header {
+    height: 110px;
+    background-color: #282d63;
+    border-bottom: 10px solid #ffcf33;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header .menu {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu > ul {
+    width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header .menu-item {
+    vertical-align: top;
+    display: inline-block;
+    line-height: 110px;
+}
+
+.menu-item > a {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.menu-item>a:hover {
+    color: #ffcf33;
+}
+
+header .menu-item.active a {
+    color: #ffcf33;
+}
+
+#logo_header {
+    width:70px;
+    height: 100px;
+    margin-top: 5px;
+}
+#logo_header>img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1165px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro {
+    width: 1165px;
+    height: 400px;
+}
+
+#intro-homepage {
+    background-image: url("../Img/Intestazione.jpg");
+}
+
+#intro-text-background {
+    width: 765px;
+    height: 200px;
+    background-color: rgba(180,167,142,0.65);
+    position:relative;
+    top: 100px;
+    left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #282d63;
+    text-align: center;
+    margin-top: 35px;
+}
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #282d63;
+    text-align: center;
+}
+
+
+.main-page {
+    width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#main-text-homepage {
+    width: 965px;
+    margin-left: 100px;
+}
+
+.main-text > p {
+    font-size: 20px;
+    line-height: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-photos {
+    width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homepage-photo {
+    margin-top: 70px;
+    width: 265px;
+    height: 240px;
+    display: block;
+}
+
+.overlay {
+    position: relative;
+    top: -244px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(40,45,99,0.8);
+    text-align: center;
+}
+
+.homepage-photo:hover .overlay {
+    opacity: 1;
+}
+
+.photo-text {
+    color: #ffcf33;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.homepage-photo > img {
+    width: 100%;
+    height: 100%;
+}
+
+#unesco-coa {
+    width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#unesco-text {
+    text-align: center;
+    font-size: 32px;
+    color: #282d63;
+    margin: 100px 260px 20px 265px;
+}
+
+#unesco-coa-button {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 3px #ffcf33;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#unesco-coa-button > img {
+    width: 75%;
+    height: 65%;
+    margin-top: 15px;
+}
+
+#unesco-coa-button > p {
+    font-size: 18px;
+    color: #0b5e9b;
+    font-weight: bold;
+    margin-top: -25px;
+}
+
+#unesco-coa-button:hover {
+    transform: scale(1.10);
+    box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+
+
+footer {
+    height: 265px;
+    background-color: #282d63;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcf33;
+    margin-bottom: 15px;
+}
+
+.section-footer {
+    width: 265px;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+i {
+    color: white;
+    padding: 5px;
+}
+
+#phone-mail {
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+#useful-links-sites > a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+#useful-links-pdf {
+    margin-top: 20px;
+    display:flex;
+}
+
+#pdf-logo {
+    width: 50px;
+    height: 50px;
+}
+
+#pdf-logo:hover {
+    transform: scale(1.25);
+}
+
+#pdf-text {
+    width: 112px;
+    height: 60px;
+    font-size: 16px;
+    color: #ffcf33;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 10px;
+    transition-property: font-weight;
+}
+
+#pdf-text:hover {
+    font-weight: bolder;
+}
+
+.section-footer > p {
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+}
+
+#logo-footer {
+    width: 265px;
+    margin-top: 30px;
+}
+
+#logo-footer > img {
+    width: 115px;
+    height: 150px;
+    margin-left:75px;
+    margin-bottom: 10px;
+}
+
+#logo-footer > p {
+    color: #ffcf33;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* HERITAGE PAGE */
+
+.container-heritage {
+    width: 1165px;
+    height: 2750px;
+    display: flex;
+    justify-items: center;
+
+}
+
+.container-fixed-left {
+    width: 265px;
+}
+
+.anchor-menu {
+    list-style: none;
+    margin-top: 150px;
+    margin-left: 35px;
+    position:fixed;
+}
+
+.anchor-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+.dot-item {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: solid 2px #ab917a;
+    background-color: transparent;
+    margin-right: 15px;
+    transition: 0.2s ease;
+    transition-property: background-color;
+}
+
+
+.anchor-link {
+    font-size: 20px;
+    color: #ab917a;
+    font-weight: normal;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.2s ease;
+    transition-property: font-weight;
+}
+
+.square-item {
+    width: 10px;
+    height: 10px;
+    background-color: #ab917a;
+    margin-left: 7.5px;
+    margin-top: 5px;
+}
+
+
+
+.anchor-item:hover .dot-item {
+    background-color: #ab917a;
+}
+
+.anchor-link:hover {
+    font-weight: bold;
+}
+
+.dot-space {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #ab917a;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.content-heritage {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: right;
+    justify-content: right;
+}
+
+.photo-intro-heritage {
+    width: 900px;
+    height: 580px;
+    background-image: url("../Img/Tower_PSD.jpg");
+}
+
+.intro-text {
+    width: 630px;
+    height: 150px;
+    background-color: rgba(180, 167, 142, 0.65);
+    position: relative;
+}
+
+#intro-text-heritage {
+    top: 215px;
+    left: 135px;
+}
+
+h2 {
+    padding-top: 20px;
+    line-height: 60px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #282d63;
+    text-align: center;
+}
+
+.box-sections {
+    width: 900px;
+}
+
+.section-heritage {
+    width: 900px;
+    height: 800px;
+    margin-bottom: 120px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Libre Caslon Text";
+    color: #282d63;
+}
+
+.section-heritage > h3 {
+    text-align: right;
+    border-right: solid 5px #282d63;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    padding-right: 15px;
+}
+
+#World-Heritage-Site, #United-Kingdom {
+    margin-top: -310px;
+}
+
+#World-Heritage-Site {
+    height: 400px;
+ }
+
+.section-heritage-content {
+    width: 900px;
+}
+
+.section-heritage-content > img {
+    float: left;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.section-heritage-content > p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    font-size: 18px;
+    width: 470px;
+    border-right: solid 5px #ffcf33;
+    padding-right: 15px;
+    float: right;
+
+}
+
+#WES-logo {
+    margin-top: 100px;
+}
+
+
+
+
+.section-heritage > p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    font-size: 18px;
+    width: 750px;
+    margin-left: 130px;
+    border-right: solid 5px #ffcf33;
+    padding-right: 15px;
+}
+
+table {
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+    padding-right: 15px;
+    border-right: solid 5px #ffcf33;
+    margin-left:400px;
+}
+
+tr {
+    width: 500px;
+}
+
+.table-title {
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    width: 495px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #282d63;
+    border-right: solid 5px #282d63;
+    margin-bottom: 10px;
+    margin-left:400px;
+    transition-property: background-color, color;
+    transition: .2s ease;
+}
+
+td {
+    height: 40px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.table-entry {
+    width: 150px;
+    font-weight: bold;
+}
+
+.table-data {
+    font-weight: normal;
+}
+
+.heritage-footer {
+
+}
+
+.anchor-bottom {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+    text-align: center;
+}
+
+.anchor-bottom >i {
+    color: #ab917a;
+    opacity: 0.80;
+}
+
+.anchor-bottom>i:hover {
+    opacity: 1;
+}
+
+/* ROYALTY */
+
+#intro-royalty {
+    background-image: url("../Img/confessor-intro.jpg");
+}
+
+#intro-text-royalty {
+    top: 125px;
+    left: 267px;
+}
+
+#main-text-royalty {
+    width: 765px;
+    margin-left: 200px;
+}
+
+.royalty-sections {
+    width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-royalty {
+    width: 365px;
+    margin-top: 70px;
+}
+
+.section-royalty > h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-royalty > p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+figure {
+    margin-top: 30px;
+    margin-left: 32.5px;
+    margin-bottom: 30px;
+}
+
+figcaption {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* GALLERY */
+
+.container-fixed-left > h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container-gallery {
+    width: 865px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-photo {
+    margin-top: 35px;
+}
+
